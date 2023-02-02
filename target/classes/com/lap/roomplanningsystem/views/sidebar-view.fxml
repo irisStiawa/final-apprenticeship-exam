@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #4F6080;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lap.roomplanningsystem.controller.SidebarController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logoWeiss.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="80.0" />
+               </VBox.margin>
+            </VBox>
+            <Label fx:id="homeLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedHome" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Home" textFill="WHITE">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="calendarLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedCalendar" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Kalender" textFill="WHITE">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/calender-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="roomsLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedRooms" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Räume" textFill="WHITE">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/room.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="eventLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedEvents" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Veranstaltungen" textFill="WHITE">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/calendar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="createEventLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedCreateEvents" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Veranstaltungen erfassen" textFill="WHITE" visible="false">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/createEvent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="stammdataLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedStammdata" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Stammdaten verwalten" textFill="WHITE" visible="false">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/data.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="statisticLabel" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" onMouseClicked="#onMouseClickedStatistic" onMouseEntered="#menuItemHover" onMouseExited="#menuItemExited" styleClass="menu-Item" text="Statistik" textFill="WHITE" visible="false">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/statistic-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label onMouseClicked="#testLogin" text="test login" textFill="WHITE" underline="true" visible="false">
+               <VBox.margin>
+                  <Insets left="20.0" top="50.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</VBox>

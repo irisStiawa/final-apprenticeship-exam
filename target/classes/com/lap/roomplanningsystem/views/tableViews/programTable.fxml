@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="393.0" styleClass="table" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lap.roomplanningsystem.controller.tableController.ProgramTableController">
+   <columns>
+      <TableColumn fx:id="numberColumn" prefWidth="90.0" style="-fx-aligment: LEFT;" styleClass="tableColumn" text="Programm-Nr." />
+      <TableColumn fx:id="descriptionColumn" prefWidth="295.0" styleClass="tableColumn" text="Programmbezeichnung" />
+   </columns>
+</TableView>

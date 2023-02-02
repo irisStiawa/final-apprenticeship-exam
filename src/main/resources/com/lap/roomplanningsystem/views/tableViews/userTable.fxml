@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="393.0" styleClass="table" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lap.roomplanningsystem.controller.tableController.UserTableController">
+   <columns>
+      <TableColumn fx:id="iDColumn" prefWidth="71.0" style="-fx-aligment: LEFT;" styleClass="tableColumn" text="Nutzer-Nr." />
+      <TableColumn fx:id="firstnameColumn" prefWidth="117.0" styleClass="tableColumn" text="Vorname" />
+      <TableColumn fx:id="lastnameColumn" prefWidth="121.0" styleClass="tableColumn" text="Nachname" />
+      <TableColumn fx:id="usernameColumn" prefWidth="114.0" styleClass="tableColumn" text="Username" />
+      <TableColumn fx:id="authorizationColumn" prefWidth="95.5" styleClass="tableColumn" text="Autorisierung" />
+      <TableColumn fx:id="statusColumn" prefWidth="81.0" styleClass="tableColumn" text="Status" />
+   </columns>
+</TableView>

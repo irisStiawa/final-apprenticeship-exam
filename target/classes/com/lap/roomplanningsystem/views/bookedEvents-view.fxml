@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="724.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lap.roomplanningsystem.controller.BookedEventsViewController">
+   <children>
+      <Label fx:id="label" graphicTextGap="10.0" text="gebuchte Veranstaltungen">
+         <font>
+            <Font name="Century Gothic" size="36.0" />
+         </font>
+      </Label>
+      <Label text="unter Berücksichtigung von: Wochentagen, Feiertagen, Kursdauer, Kollisionen">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="numberColumn" prefWidth="53.0" text="Nr." />
+            <TableColumn fx:id="descriptionColumn" prefWidth="294.0" text="Veranstaltungsbezeichnung" />
+            <TableColumn fx:id="dateColumn" prefWidth="109.5" text="Datum" />
+            <TableColumn fx:id="startColumn" prefWidth="106.5" text="Beginn" />
+            <TableColumn fx:id="endColumn" prefWidth="120.0" text="Ende" />
+         </columns>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </TableView>
+      <Label text="nicht erstellte Veranstaltungen aufgrund von Kollisionen, Feiertagen, Kursdauer" textFill="#eb2828">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="tableView2" layoutX="30.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="numberColumn2" prefWidth="53.0" text="Nr." />
+            <TableColumn fx:id="descriptionColumn2" prefWidth="294.0" text="Veranstaltungsbezeichnung" />
+            <TableColumn fx:id="dateColumn2" prefWidth="109.5" text="Datum" />
+            <TableColumn fx:id="startColumn2" prefWidth="106.5" text="Beginn" />
+            <TableColumn fx:id="endColumn2" prefWidth="120.0" text="Ende" />
+         </columns>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox prefHeight="40.0" prefWidth="560.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="750.0">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="40.0" prefWidth="388.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onAcceptButtonClicked" styleClass="custom-button" text="Ok" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

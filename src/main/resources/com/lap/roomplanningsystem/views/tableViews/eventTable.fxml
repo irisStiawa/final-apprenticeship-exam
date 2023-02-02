@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="393.0" styleClass="table" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lap.roomplanningsystem.controller.tableController.EventTableController">
+   <columns>
+      <TableColumn fx:id="numberColumn" prefWidth="57.5" styleClass="tableColumn" text="Nr." />
+      <TableColumn fx:id="titleColumn" prefWidth="362.5" styleClass="tableColumn" text="Veranstaltung" />
+      <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="100.0" styleClass="tableColumn" text="Datum" />
+      <TableColumn fx:id="startColumn" styleClass="tableColumn" text="Beginn" />
+      <TableColumn fx:id="endColumn" styleClass="tableColumn" text="Ende" />
+   </columns>
+</TableView>

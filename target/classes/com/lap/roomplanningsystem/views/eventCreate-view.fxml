@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lap.roomplanningsystem.controller.CreateEventViewController">
+   <children>
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.5" minWidth="10.0" prefWidth="343.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="502.5" minWidth="10.0" prefWidth="372.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="102.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="6.0" prefWidth="39.5" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="profilImage" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onProfilIconClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT">
+               <image>
+                  <Image url="@../images/profilicon.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#onLogoutButtonClicked" styleClass="custom-button" text="Logout" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+               </padding>
+            </Button>
+         </children>
+      </GridPane>
+      <Label maxWidth="1.7976931348623157E308" style="-fx-background-color: #4F60801a;" text="Veranstaltung erfassen">
+         <font>
+            <Font name="Century Gothic" size="36.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="20.0" top="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <GridPane prefHeight="488.0" prefWidth="680.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.5" minWidth="10.0" prefWidth="171.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.5" minWidth="10.0" prefWidth="109.5" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.5" minWidth="10.0" prefWidth="99.5" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="33.5" minHeight="10.0" prefHeight="20.5" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="59.5" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="87.5" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="78.5" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <children>
+            <Label text="Vortragender*:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Kurs*:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Termintyp*:" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Raum*:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Datum*:" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Beginn (Uhrzeit)*:" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Ende (Uhrzeit)*:" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="Datum von*:" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#onRequestButtonClicked" styleClass="custom-button" text="Abfrage" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onSaveButtonClicked" styleClass="custom-button" text="Erfassen" textFill="WHITE" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="singleDatePicker" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </DatePicker>
+            <DatePicker fx:id="seriesStartDatePicker" disable="true" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </DatePicker>
+            <Label text="Datum bis*:" GridPane.columnIndex="2" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label text="Beginn (Uhrzeit)*:" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Ende (Uhrzeit)*:" GridPane.columnIndex="2" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <DatePicker fx:id="seriesEndDatePicker" disable="true" prefWidth="150.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </DatePicker>
+            <ComboBox fx:id="roomComboBox" disable="true" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="courseComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="coachComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="typComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Standort*:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="locationComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="singleStartTimeComboBox" prefWidth="110.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="8" />
+            <ComboBox fx:id="seriesStartTimeComboBox" disable="true" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="11" />
+            <ComboBox fx:id="singleEndTimeComboBox" prefWidth="110.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></ComboBox>
+            <ComboBox fx:id="seriesEndTimeComboBox" disable="true" prefWidth="150.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></ComboBox>
+            <Label fx:id="errorLabel" textFill="#c60001" GridPane.columnSpan="4" GridPane.rowIndex="12">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="resultLabel" textFill="#00bc06" GridPane.columnSpan="4" GridPane.rowIndex="12">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" top="20.0" />
+   </padding>
+</VBox>
